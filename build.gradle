@@ -19,6 +19,16 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+jar {
+    enabled = false
+}
+
+bootJar{
+    archivesBaseName = 'app'
+    archiveFileName = 'app.jar'
+    archiveVersion = "0.0.0"
+}
+
 test {
     useJUnitPlatform()
 }
